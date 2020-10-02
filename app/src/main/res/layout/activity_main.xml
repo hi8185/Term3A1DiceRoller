@@ -29,6 +29,7 @@
         tools:layout_editor_absoluteY="387dp" />
 
     <TextView
+        android:id="@+id/title_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dice Roller"
