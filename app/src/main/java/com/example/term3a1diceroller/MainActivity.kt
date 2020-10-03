@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //set certain values initially as requested in instructions
+        //initialize total in a scope the buttons can access
         var total = 0;
 
 
@@ -22,14 +22,14 @@ class MainActivity : AppCompatActivity() {
             val roll = Random.nextInt(1, 6);
             val rollString = roll.toString();
             total += roll;
-            result_txt.setText(rollString);
+            result_txt.text = rollString;
             totalDisplay(total)
         }
 
         //when the reset button is clicked, sets all text fields that can be changed by the user
         //back to their default
         reset_btn.setOnClickListener() {
-            result_txt.setText(" ");
+            result_txt.text = " ";
             total = 0;
             totalDisplay(total);
         }
