@@ -6,7 +6,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
-    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         //when the roll button is clicked, creates an integer from 1-6, displays it,
         //adds it to the total, and displays that
         roll_btn.setOnClickListener() {
-            val roll = Random.nextInt(1, 6);
+            val roll = Random.nextInt(1, 7);
             val rollString = roll.toString();
             total += roll;
             result_txt.text = rollString;
